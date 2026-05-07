@@ -1,0 +1,3 @@
+# Optional: Postgres driver for SQLAlchemy async
+# Install this only if you run with a postgresql+asyncpg:// DATABASE_URL
+asyncpg>=0.30.0

@@ -1,0 +1,17 @@
+# BankGuard Cursor Rules
+
+## Principios de seguridad
+- NUNCA almacenar datos sensibles reales (PAN, SSN, etc.) en logs o base de datos
+- Siempre usar snippets enmascarados
+- Toda acción debe registrarse en audit_logs
+- Las reglas de detección son inmutables una vez auditadas
+
+## Convenciones de código
+- Backend: snake_case, type hints en Python, async/await
+- Frontend: camelCase, componentes funcionales React, TypeScript estricto
+- MCP: ES modules, tipos explícitos
+
+## Base de datos
+- UUIDs para todos los IDs primarios
+- Timestamps UTC siempre
+- Nunca DELETE en audit_logs (append-only)
